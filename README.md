@@ -3,10 +3,10 @@
 > **Final Project — Ironhack AI Bootcamp**  
 > A production-grade, data-driven Retrieval-Augmented Generation (RAG) system for multilingual question answering over YouTube video content.
 
-[![Open Benchmark Notebook in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/blob/main/notebooks/benchmark.ipynb)
-[![Open Analyzer in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/blob/main/notebooks/youtube_analyzer.ipynb)
+[![Open Benchmark Notebook in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DanielHuette/Final-Graduation-Project/blob/main/notebooks/benchmark.ipynb)
+[![Open Analyzer in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DanielHuette/Final-Graduation-Project/blob/main/notebooks/youtube_analyzer.ipynb)
 
-> **📌 Placeholder:** Replace `YOUR_GITHUB_USERNAME` and `YOUR_REPO_NAME` in the badge URLs above once the repository is published.
+
 
 ---
 
@@ -265,8 +265,39 @@ Pre-computed results are available in `benchmark_results/`. Place this folder at
 
 ## Screenshots
 
-> **📌 Placeholder:** Screenshots of the Gradio UI will be added here.  
-> Recommended: Chat Interface Hub, Judgement Day tab, Benchmark tab, Benchmark Plots tab.
+## Screenshots
+
+### Chat Interface — main application view
+![Chat Interface](01_chat_interface.jpeg)
+
+The main UI showing a question answered with retrieved passages, 
+timestamps, live cost tracking, and top-3 passage ranking.
+
+### Benchmark Results — Sweet-Spot Recommendations
+![Benchmark Recommendations](02_benchmark_recommendations.jpeg)
+
+Configuration recommendations for different user profiles 
+(Solo Developer, Start-up, Mid-size Company, Enterprise), 
+based on systematic Whisper × LLM benchmarking.
+
+### Ground-Truth Evaluation — Judgement Day
+![Judgement Day](03_judgement_day_eval.jpeg)
+
+Whisper transcript quality (WER) and answer faithfulness (LLM-as-Judge) 
+evaluated against official YouTube captions.
+
+### RAG vs. No-RAG Comparison
+![RAG vs No-RAG](04_rag_vs_no_rag.jpeg)
+
+Empirical demonstration that retrieval-augmented generation 
+lifts answer accuracy from 50% (No-RAG) to 100% (With RAG).
+
+### LLM Comparison — Quality, Latency, Cost
+![LLM Comparison](05_llm_comparison.jpeg)
+
+Side-by-side comparison of GPT-5, GPT-5-mini, GPT-4o-mini, 
+Qwen-2.5-72B, and Llama-3.3 across answer quality, latency, 
+and total cost.
 
 ---
 
